@@ -14,11 +14,19 @@ function myFunction() {
   };
   nestedFunction();
 }
+
 myFunction();
 
-// Explanation: 
+// Explanation: the variable internal is declared and initialized within the parent function that nestedFunction is nested within, so its able to access things within the same scope.
 
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+function summation(count) {
+	let num = 0;
+	for(i=0; i<= count; i++){
+		num += i;
+	}
+  return num
+}
