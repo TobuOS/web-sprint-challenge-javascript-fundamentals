@@ -14,6 +14,7 @@ function myFunction() {
   };
   nestedFunction();
 }
+
 myFunction();
 
 // Explanation: the variable internal is declared and initialized within the parent function that nestedFunction is nested within, so its able to access things within the same scope.

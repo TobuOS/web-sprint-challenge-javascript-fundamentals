@@ -24,9 +24,10 @@ const displayNames = [];
 
 zooAnimals.forEach((data) => {
  displayNames.push(`Name: ${data.animal_name} Scientific Name: ${data.scientific_name}`);
+ return displayNames;
 });
 
-console.log(displayNames);
+
 
 /* Request 2: .map()
 
@@ -65,7 +66,7 @@ The zoos need to know their total animal population across the United States. Fi
 let populationTotal = 0;
 
 let populationTotal = zooAnimals.reduce((total, cv) => {
-  return total + cv.population;
+  return total += cv.population;
 },0);
 
 console.log(populationTotal);
